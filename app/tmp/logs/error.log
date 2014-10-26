@@ -1,0 +1,28 @@
+2014-10-18 22:06:08 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /logistics/
+Stack Trace:
+#0 /var/www/html/logistics/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 /var/www/html/logistics/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 /var/www/html/logistics/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#3 /var/www/html/logistics/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /var/www/html/logistics/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/html/logistics/index.php(41): require('/var/www/html/l...')
+#6 {main}
+2014-10-26 09:50:06 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /logistics/
+Stack Trace:
+#0 /var/www/html/logistics/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 /var/www/html/logistics/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 /var/www/html/logistics/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#3 /var/www/html/logistics/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /var/www/html/logistics/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/html/logistics/index.php(41): require('/var/www/html/l...')
+#6 {main}
