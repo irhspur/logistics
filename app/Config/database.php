@@ -69,7 +69,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'root',
+		'password' => '',
 		'database' => 'logistics',
 		'prefix' => '',
 		'encoding' => 'utf8',

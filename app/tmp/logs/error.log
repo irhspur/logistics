@@ -26,3 +26,442 @@ Stack Trace:
 #4 /var/www/html/logistics/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 /var/www/html/logistics/index.php(41): require('/var/www/html/l...')
 #6 {main}
+2014-10-26 06:17:00 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /logistics/
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(186): Controller->constructClasses()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\xampp\htdocs\logistics\index.php(41): require('E:\xampp\htdocs...')
+#6 {main}
+2014-10-26 09:53:40 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /logistics/
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(186): Controller->constructClasses()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 E:\xampp\htdocs\logistics\index.php(41): require('E:\xampp\htdocs...')
+#6 {main}
+2014-10-26 11:07:14 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/posts
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-26 11:09:22 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/posts
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-26 11:10:57 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/posts/index
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-26 11:12:55 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/post/index
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-26 11:13:35 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/post/index
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-26 11:13:42 Error: Fatal Error (1): Class 'AppMOdel' not found in [E:\xampp\htdocs\logistics\app\Model\Post.php, line 2]
+2014-10-26 11:13:42 Error: [FatalErrorException] Class 'AppMOdel' not found
+Request URL: /logistics/posts/index
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppMOdel...', 'E:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppMOdel...', 'E:\xampp\htdocs...', 2, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AppMOdel...', 'E:\xampp\htdocs...', 2, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-26 11:15:29 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /logistics/posts/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-01 12:34:13 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/index
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-01 12:46:23 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /logistics/posts/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-01 12:47:04 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Posts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Posts\\view.ctp',
+)
+Request URL: /logistics/posts/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-01 12:47:08 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Posts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Posts\\view.ctp',
+)
+Request URL: /logistics/posts/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-01 12:49:56 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Posts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Posts\\view.ctp',
+)
+Request URL: /logistics/posts/view/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-01 13:18:25 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 3]
+2014-11-01 13:18:25 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:19:24 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 3]
+2014-11-01 13:19:24 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:21:19 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/post/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-01 13:21:32 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 3]
+2014-11-01 13:21:32 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:22:24 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 3]
+2014-11-01 13:22:24 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:22:25 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 3]
+2014-11-01 13:22:25 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:22:25 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 3]
+2014-11-01 13:22:25 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:22:26 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 3]
+2014-11-01 13:22:26 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:22:34 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 5]
+2014-11-01 13:22:34 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 5, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 5, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:22:35 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 5]
+2014-11-01 13:22:35 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 5, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 5, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:22:36 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 5]
+2014-11-01 13:22:36 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 5, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 5, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:23:24 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 4]
+2014-11-01 13:23:24 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 4, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 4, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:23:26 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\View\Posts\add.ctp, line 4]
+2014-11-01 13:23:26 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 4, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 4, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:26:29 Error: Fatal Error (1): Cannot access empty property in [E:\xampp\htdocs\logistics\lib\Cake\View\View.php, line 856]
+2014-11-01 13:26:29 Error: [FatalErrorException] Cannot access empty property
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\xampp\htdocs...', 856)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\xampp\htdocs...', 856, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\xampp\htdocs...', 856, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:29:21 Error: Fatal Error (1): Cannot access empty property in [E:\xampp\htdocs\logistics\lib\Cake\View\View.php, line 856]
+2014-11-01 13:29:21 Error: [FatalErrorException] Cannot access empty property
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'E:\xampp\htdocs...', 856)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'E:\xampp\htdocs...', 856, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'E:\xampp\htdocs...', 856, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:36:33 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 17]
+2014-11-01 13:36:33 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:37:28 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 17]
+2014-11-01 13:37:28 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 13:37:32 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 17]
+2014-11-01 13:37:32 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 14:05:51 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 17]
+2014-11-01 14:05:51 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 14:07:02 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 15]
+2014-11-01 14:07:02 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 15, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 15, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 14:07:11 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 15]
+2014-11-01 14:07:11 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 15, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 15, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 14:11:56 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 17]
+2014-11-01 14:11:56 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-01 14:12:07 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 17]
+2014-11-01 14:12:07 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 17, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 16:51:12 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/index
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 17:16:04 Error: [MissingActionException] Action PostsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'edit',
+)
+Request URL: /logistics/posts/edit
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-18 17:16:07 Error: [MissingActionException] Action PostsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'edit',
+)
+Request URL: /logistics/posts/edit/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-18 17:17:45 Error: [MissingControllerException] Controller class PostsindController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsindController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/postsind
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 17:17:50 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/index
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 17:22:18 Error: [MissingActionException] Action PostsController::inddex() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'inddex',
+)
+Request URL: /logistics/posts/inddex/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
