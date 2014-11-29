@@ -70,7 +70,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'logistics',
+		'database' => 'logistics_db',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
