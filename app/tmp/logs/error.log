@@ -918,3 +918,876 @@ Request URL: /logistics/branches
 Stack Trace:
 #0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-11-30 04:03:23 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/admin
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 04:03:27 Error: Fatal Error (4): syntax error, unexpected '(', expecting '{' in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 3]
+2014-11-30 04:03:27 Error: [FatalErrorException] syntax error, unexpected '(', expecting '{'
+Request URL: /logistics/admins
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 3, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 3, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 04:03:54 Error: Fatal Error (4): syntax error, unexpected '%' in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 17]
+2014-11-30 04:03:54 Error: [FatalErrorException] syntax error, unexpected '%'
+Request URL: /logistics/admins
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 17, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 17, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 04:04:04 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Admins\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Admins\\index.ctp',
+)
+Request URL: /logistics/admins
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 04:10:29 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 04:10:38 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 04:14:18 Error: Fatal Error (1): Call to undefined function _isAdmin() in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 8]
+2014-11-30 04:14:18 Error: [FatalErrorException] Call to undefined function _isAdmin()
+Request URL: /logistics/admins
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 8, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\xampp\htdocs...', 8, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 04:14:44 Error: Fatal Error (1): Call to undefined function admin() in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 8]
+2014-11-30 04:14:44 Error: [FatalErrorException] Call to undefined function admin()
+Request URL: /logistics/admins
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 8, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\xampp\htdocs...', 8, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 04:14:56 Error: Fatal Error (1): Call to undefined function admin() in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 8]
+2014-11-30 04:14:56 Error: [FatalErrorException] Call to undefined function admin()
+Request URL: /logistics/admins
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 8, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\xampp\htdocs...', 8, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 04:22:26 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 04:26:20 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Admins\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Admins\\login.ctp',
+)
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 06:30:55 Error: [MissingActionException] Action AdminsController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminsController',
+  'action' => 'users',
+)
+Request URL: /logistics/admins/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 06:31:05 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/user/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 06:31:10 Error: Fatal Error (4): syntax error, unexpected T_STRING in [E:\xampp\htdocs\logistics\app\Controller\UsersController.php, line 22]
+2014-11-30 06:31:10 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 22, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 22, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 06:39:54 Error: Fatal Error (1): Call to undefined function debugh() in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 23]
+2014-11-30 06:39:54 Error: [FatalErrorException] Call to undefined function debugh()
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 23, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\xampp\htdocs...', 23, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 06:40:01 Error: Fatal Error (4): syntax error, unexpected T_STRING in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 23]
+2014-11-30 06:40:01 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 07:01:33 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 23]
+2014-11-30 07:01:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 07:01:43 Error: Fatal Error (1): Call to a member function password() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 23]
+2014-11-30 07:01:43 Error: [FatalErrorException] Call to a member function password() on a non-object
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 23, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 23, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 07:03:58 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 23]
+2014-11-30 07:03:58 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 07:12:37 Error: [MissingActionException] Action AdminsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminsController',
+  'action' => 'add',
+)
+Request URL: /logistics/admins/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 07:13:29 Error: [MissingActionException] Action AdminsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminsController',
+  'action' => 'add',
+)
+Request URL: /logistics/admins/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 07:13:32 Error: [MissingActionException] Action AdminsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminsController',
+  'action' => 'add',
+)
+Request URL: /logistics/admins/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 07:13:33 Error: [MissingActionException] Action AdminsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminsController',
+  'action' => 'add',
+)
+Request URL: /logistics/admins/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 07:14:59 Error: Fatal Error (1): Call to a member function create() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 49]
+2014-11-30 07:14:59 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /logistics/admins/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 49, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 49, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 07:48:36 Error: Fatal Error (64): Cannot redeclare class User in [E:\xampp\htdocs\logistics\app\Model\Admin.php, line 34]
+2014-11-30 07:48:36 Error: [FatalErrorException] Cannot redeclare class User
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 34)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 34, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 34, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 07:49:13 Error: Fatal Error (64): Cannot redeclare class User in [E:\xampp\htdocs\logistics\app\Model\Admin.php, line 31]
+2014-11-30 07:49:13 Error: [FatalErrorException] Cannot redeclare class User
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 31)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 31, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 31, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 07:49:15 Error: Fatal Error (64): Cannot redeclare class User in [E:\xampp\htdocs\logistics\app\Model\Admin.php, line 31]
+2014-11-30 07:49:15 Error: [FatalErrorException] Cannot redeclare class User
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 31)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 31, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 31, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:01:08 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 9]
+2014-11-30 08:01:08 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:01:15 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 9]
+2014-11-30 08:01:15 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:01:17 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 9]
+2014-11-30 08:01:17 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:01:32 Error: Fatal Error (4): syntax error, unexpected '(', expecting ',' or ';' in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 9]
+2014-11-30 08:01:32 Error: [FatalErrorException] syntax error, unexpected '(', expecting ',' or ';'
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 9, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:02:45 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 16]
+2014-11-30 08:02:45 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 16, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 16, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:04:15 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 10]
+2014-11-30 08:04:15 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 10, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 10, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:05:44 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 10]
+2014-11-30 08:05:44 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 10, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 10, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:05:45 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [E:\xampp\htdocs\logistics\app\Controller\AdminsController.php, line 10]
+2014-11-30 08:05:45 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /logistics/admins/login
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 10, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 10, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 08:09:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'invaliate' at line 1
+Request URL: /logistics/users/edit/11
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('invaliate', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('invaliate', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('invaliate', Array, Array)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(808): DboSource->query('invaliate', Array, Object(User))
+#5 E:\xampp\htdocs\logistics\app\Model\User.php(90): Model->__call('invaliate', Array)
+#6 E:\xampp\htdocs\logistics\app\Model\User.php(90): User->invaliate('password_confir...', 'The passwords d...')
+#7 [internal function]: User->matchPasswords(Array, Array)
+#8 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationSet.php(135): CakeValidationRule->process('password', Array, Array)
+#10 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(267): CakeValidationSet->validate(Array, true)
+#11 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(3367): ModelValidator->validates(Array)
+#13 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1758): Model->validates(Array)
+#14 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(112): Model->save(Array)
+#15 [internal function]: UsersController->edit('11')
+#16 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2014-11-30 08:20:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'contact' cannot be null
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `lo...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `lo...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(89): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-30 08:37:29 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:38:23 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:39:10 Error: [MissingControllerException] Controller class LogisticsController could not be found.
+Exception Attributes: array (
+  'class' => 'LogisticsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/logistics/users
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:39:18 Error: [MissingControllerException] Controller class LogisticsController could not be found.
+Exception Attributes: array (
+  'class' => 'LogisticsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/logistics/users
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:40:14 Error: [MissingControllerException] Controller class LogisticsController could not be found.
+Exception Attributes: array (
+  'class' => 'LogisticsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/logistics/users
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:41:01 Error: [MissingControllerException] Controller class LogisticsController could not be found.
+Exception Attributes: array (
+  'class' => 'LogisticsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/logistics/users
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:47:30 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:47:34 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:48:23 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 08:59:40 Error: [NotFoundException] Invalid user
+Request URL: /logistics/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:00:07 Error: [NotFoundException] Invalid user
+Request URL: /logistics/users/view/1
+Stack Trace:
+#0 [internal function]: UsersController->view('1')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:01:33 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [E:\xampp\htdocs\logistics\app\View\Users\index.ctp, line 60]
+2014-11-30 09:01:33 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /logistics/users/
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 60, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 60, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 09:41:49 Error: Fatal Error (1): Call to undefined method SessionComponent::set() in [E:\xampp\htdocs\logistics\app\Controller\AppController.php, line 56]
+2014-11-30 09:41:49 Error: [FatalErrorException] Call to undefined method SessionComponent::set()
+Request URL: /logistics/users
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 56)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 56, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\xampp\htdocs...', 56, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 09:42:40 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add
+Stack Trace:
+#0 [internal function]: UsersController->add()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:43:06 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add
+Stack Trace:
+#0 [internal function]: UsersController->add()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:43:10 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add
+Stack Trace:
+#0 [internal function]: UsersController->add()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:43:17 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add
+Stack Trace:
+#0 [internal function]: UsersController->add()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:43:25 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add/employee
+Stack Trace:
+#0 [internal function]: UsersController->add('employee')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:45:04 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\xampp\htdocs\logistics\app\View\Users\index.ctp, line 55]
+2014-11-30 09:45:04 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /logistics/users
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 55, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 55, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 09:45:18 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add/employee
+Stack Trace:
+#0 [internal function]: UsersController->add('employee')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:46:58 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add/employee
+Stack Trace:
+#0 [internal function]: UsersController->add('employee')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:47:02 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add
+Stack Trace:
+#0 [internal function]: UsersController->add()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 09:47:10 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/add/employee
+Stack Trace:
+#0 [internal function]: UsersController->add('employee')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 10:04:18 Error: [MissingActionException] Action UsersController::New User() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'New User',
+)
+Request URL: /logistics/users/New%20User
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 10:05:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'invaliate' at line 1
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('invaliate', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('invaliate', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('invaliate', Array, Array)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(808): DboSource->query('invaliate', Array, Object(User))
+#5 E:\xampp\htdocs\logistics\app\Model\User.php(90): Model->__call('invaliate', Array)
+#6 E:\xampp\htdocs\logistics\app\Model\User.php(90): User->invaliate('password_confir...', 'The passwords d...')
+#7 [internal function]: User->matchPasswords(Array, Array)
+#8 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationSet.php(135): CakeValidationRule->process('password', Array, Array)
+#10 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(267): CakeValidationSet->validate(Array, false)
+#11 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(3367): ModelValidator->validates(Array)
+#13 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1758): Model->validates(Array)
+#14 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(92): Model->save(Array)
+#15 [internal function]: UsersController->add()
+#16 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2014-11-30 10:12:42 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\xampp\htdocs\logistics\app\View\Users\add.ctp, line 23]
+2014-11-30 10:12:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 23, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 10:12:55 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\xampp\htdocs\logistics\app\View\Users\add.ctp, line 21]
+2014-11-30 10:12:55 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 21, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 21, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 10:12:58 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\xampp\htdocs\logistics\app\View\Users\add.ctp, line 21]
+2014-11-30 10:12:58 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 21, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 21, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 10:23:25 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 10:23:41 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 10:32:42 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 10:32:50 Error: [MissingActionException] Action UsersController::employee() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'employee',
+)
+Request URL: /logistics/users/employee
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 10:33:13 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 10:33:24 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 10:33:29 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/index/employee
+Stack Trace:
+#0 [internal function]: UsersController->index('employee')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 10:33:36 Error: [NotFoundException] Invalid user
+Request URL: /logistics/users/view/
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 10:34:32 Error: [NotFoundException] Invalid role
+Request URL: /logistics/users/index/employee
+Stack Trace:
+#0 [internal function]: UsersController->index('employee')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 11:14:58 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\UsersController.php, line 70]
+2014-11-30 11:14:58 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /logistics/users/indexByRoles
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 70)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 70, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 70, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 11:15:19 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Users\index_by_roles.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Users\\index_by_roles.ctp',
+)
+Request URL: /logistics/users/indexByRoles
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 11:15:50 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Users\index_by_roles.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Users\\index_by_roles.ctp',
+)
+Request URL: /logistics/users/indexByRoles
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 11:16:27 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Users\index_by_roles.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Users\\index_by_roles.ctp',
+)
+Request URL: /logistics/users/indexByRoles
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 11:16:33 Error: [MissingActionException] Action UsersController::index_by_roles() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index_by_roles',
+)
+Request URL: /logistics/users/index_by_roles
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 11:16:53 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Users\index_by_roles.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Users\\index_by_roles.ctp',
+)
+Request URL: /logistics/users/index_by_roles
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 11:17:17 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Users\index_by_roles.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Users\\index_by_roles.ctp',
+)
+Request URL: /logistics/users/index_by_roles/employee
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 11:18:31 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Users\indexr.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Users\\indexr.ctp',
+)
+Request URL: /logistics/users/indexr/12
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 11:44:50 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 11:47:17 Error: [MissingControllerException] Controller class BranchesController could not be found.
+Exception Attributes: array (
+  'class' => 'BranchesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 12:03:18 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Branches\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Branches\\index.ctp',
+)
+Request URL: /logistics/branches
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BranchesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

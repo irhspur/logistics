@@ -53,6 +53,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			<?php echo $this->Session->flash(); ?>
 
+			<?php echo $this->Session->flash('auth'); ?>
+
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
