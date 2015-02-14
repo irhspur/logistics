@@ -65,4 +65,15 @@ class AppController extends Controller {
 		return $admin;		
 	}
 
+	function _loggedIn(){
+		$logged_in = FALSE;
+		if($this->Auth->user()){
+			$logged_in = TRUE;
+		}
+
+		return $logged_in;
+	}
+
+
+
 }
