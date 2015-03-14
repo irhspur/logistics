@@ -1,29 +1,35 @@
-<div class="admins view">
-<h2><?php echo __('Admin'); ?></h2>
+<div class="users view">
+<h2><?php echo __('My Profile'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
-			<?php echo h($admin['Admin']['id']); ?>
+			<?php echo h($user['User']['id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Username'); ?></dt>
 		<dd>
-			<?php echo h($admin['Admin']['username']); ?>
+			<?php echo h($user['User']['username']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Password'); ?></dt>
 		<dd>
-			<?php echo h($admin['Admin']['password']); ?>
+			<?php echo h($user['User']['password']); ?>
 			&nbsp;
 		</dd>
 	</dl>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
+	<?php if($admin):?>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Admin'), array('action' => 'edit', $admin['Admin']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Admin'), array('action' => 'delete', $admin['Admin']['id']), array(), __('Are you sure you want to delete # %s?', $admin['Admin']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Admins'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Admin'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Edit User'), array('action' => 'edit', $user['User']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete User'), array('action' => 'delete', $user['User']['id']), array(), __('Are you sure you want to delete # %s?', $user['User']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?> </li>
 	</ul>
+	<?php else:?>
+	<ul>
+	    <li><?php echo $this->Html->link(__('Edit Profile'), array('action' => 'edit', $user['User']['id'])); ?> </li>
+	</ul>
+	<?php endif;?>
 </div>

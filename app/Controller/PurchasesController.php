@@ -64,6 +64,8 @@ class PurchasesController extends AppController{
 				$this->Session->setFlash('The purchase was not saved. Please try again');
 			}
 		}
+        $logistics = $this->Purchase->Logistic->find('list');
+        $this->set(compact('logistics'));
 
 	}
 

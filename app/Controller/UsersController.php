@@ -11,11 +11,11 @@ class UsersController extends AppController {
 	public function beforeFilter(){
 		parent::beforeFilter();
 
-		if(isAdmin()){
-			$this->Auth->allow('add'); 
+		if($this->action == 'add' || $this->action == 'edit'){
+			$this->Auth->authenticate = $this->User;
 		}
 		
-		$this->Auth->allow('index');
+		$this->Auth->allow('index', 'login');
 	}
 
 /**
@@ -27,16 +27,16 @@ class UsersController extends AppController {
 
 	function login(){
 		if ($this->request->is('post')) {
-        if ($this->Auth->login()) {
-            return $this->redirect($this->Auth->redirectUrl());
+            if ($this->Auth->login()) {
+                return $this->redirect($this->Auth->redirect());
+            }
+            $this->Session->setFlash(
+                __('Username or password is incorrect'),
+                'default',
+                array(),
+                'auth'
+            );
         }
-        $this->Session->setFlash(
-            __('Username or password is incorrect'),
-            'default',
-            array(),
-            'auth'
-        );
-    }
 	}
 
 	function logout(){
@@ -64,7 +64,7 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid User'));
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-		$this->set('User', $this->User->find('first', $options));
+		$this->set('user', $this->User->find('first', $options));
 	}
 
 /**

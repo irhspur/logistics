@@ -1,5 +1,6 @@
 <div class="users index">
 	<h2><?php echo __('users'); ?></h2>
+	<?php if($admin):?>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
@@ -24,6 +25,7 @@
 <?php endforeach; ?>
 	</tbody>
 	</table>
+
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
@@ -37,10 +39,27 @@
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
+
+	<?php else:?>
+    	<p>Welcome <?php echo $current_user['username']; ?></p>
+    <?php endif;?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
-	</ul>
+    <?php if($admin):?>
+        <ul>
+            <li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('New Branch'), array('controller' => 'branches', 'action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('New Item'), array('controller' => 'logistics', 'action' => 'add')); ?></li>
+            <li>------------------------------</li>
+            <li><?php echo $this->Html->link(__('Show Branches'), array('controller' => 'branches', 'action' => 'index')); ?></li>
+            <li><?php echo $this->Html->link(__('Show Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
+        </ul>
+    <?php else:?>
+        <ul>
+            <li><?php echo $this->Html->link(__('My Profile'), array('action' => 'view', $current_user['id'])); ?></li>
+            <li><?php echo $this->Html->link(__('Edit Profile'), array('action' => 'edit', $current_user['id'])); ?></li>
+            <li><?php echo $this->Html->link(__('Request Item'), array('controller' => 'purchases', 'action' => 'add', $current_user['username'])); ?></li>
+        </ul>
+    <?php endif;?>
 </div>
