@@ -40,8 +40,15 @@ class PurchasesController extends AppController{
 
 	public function add($username){
 
-		$optionsItem = $this->Purchase->Logistic->find('list', array('fields' => 'Logistic.name'));
-		$this->set('optionsItems', $optionsItem);
+        //store unique categories into $categories
+		$category = $this->Purchase->Logistic->find(
+            'list',
+            array(
+                'fields' => 'category',
+                'group' => 'category'
+            )
+        );
+		$this->set('categories', $category);
 
 		/*$optionsItemId = $this->Purchase->Logistic->find('all', array('fields' => 'Logistic.id'));
 		$this->set('optionsItemId', $optionsItemId);*/
@@ -82,11 +89,11 @@ class PurchasesController extends AppController{
 
 	}
 
-	public function delete($id = NULL){
+	public function delete($id = NULL, $username = NULL){
 
 		$this->Purchase->delete($id);
 		$this->Session->setFlash('The purchase has been deleted');
-		$this->redirect(array('action' => 'view'));
+		$this->redirect(array('action' => 'view', $username));
 	}
 }
 

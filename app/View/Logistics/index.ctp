@@ -8,7 +8,6 @@
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('price'); ?></th>
 			<th><?php echo $this->Paginator->sort('vendor_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('purchase_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -20,9 +19,6 @@
 		<td><?php echo h($logistic['Logistic']['name']); ?>&nbsp;</td>
 		<td><?php echo h($logistic['Logistic']['price']); ?>&nbsp;</td>
 		<td><?php echo h($logistic['Logistic']['vendor_id']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($logistic['Purchase']['id'], array('controller' => 'purchases', 'action' => 'view', $logistic['Purchase']['id'])); ?>
-		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $logistic['Logistic']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $logistic['Logistic']['id'])); ?>

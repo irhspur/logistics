@@ -56,8 +56,8 @@ class LogisticsController extends AppController {
                 $this->Session->setFlash(__('The logistic could not be saved. Please, try again.'));
             }
         }
-        $purchases = $this->Logistic->Purchase->find('list');
-        $this->set(compact('purchases'));
+        $vendors = $this->Logistic->Vendor->find('list');
+        $this->set(compact('vendors'));
     }
 
     /**

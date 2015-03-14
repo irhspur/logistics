@@ -59,13 +59,13 @@ class Logistic extends AppModel {
      *
      * @var array
      */
-   /* public $belongsTo = array(
-        'Purchase' => array(
-            'className' => 'Purchase',
-            'foreignKey' => 'purchase_id',
+    public $belongsTo = array(
+        'Vendor' => array(
+            'className' => 'Vendor',
+            'foreignKey' => 'vendor_id',
             'conditions' => '',
             'fields' => '',
             'order' => ''
         )
-    );*/
+    );
 }

@@ -7,7 +7,6 @@
 		echo $this->Form->input('name');
 		echo $this->Form->input('price');
 		echo $this->Form->input('vendor_id');
-		echo $this->Form->input('purchase_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

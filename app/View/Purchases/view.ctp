@@ -21,7 +21,7 @@
 		<td><?php echo $purchase['Purchase']['vendor_id']; ?></td>
 		<td><?php echo $purchase['Purchase']['purchase_status']; ?></td>
 		<td class="actions">
-			<?php echo $this->Form->postLink(__('Cancle'), array('action' => 'delete', $purchase['Purchase']['id']), array(), __('Are you sure you want to delete # %s?', $purchase['Purchase']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Cancel'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -46,5 +46,6 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('My Profile'), array('controller' =>'users', 'action' => 'view', $current_user['id'])); ?></li>
 		<li><?php echo $this->Html->link(__('Request Item'), array('controller' =>'purchases', 'action' => 'add', $current_user['username'])); ?> </li>
-	</ul>
+        <li><?php echo $this->Html->link(__('List Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
+    </ul>
 </div>
