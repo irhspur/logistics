@@ -56,6 +56,14 @@ class BranchesController extends AppController {
                 $this->Session->setFlash(__('The branch could not be saved. Please, try again.'));
             }
         }
+        $branchManager = $this->Branch->User->find(
+            'list',
+            array(
+                'fields' => 'username',
+                'conditions' => array('User.roles' => 'branch_manager')
+            )
+        );
+        $this->set('branchManagers', $branchManager);
     }
 
     /**

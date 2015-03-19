@@ -6,7 +6,7 @@
         echo $this->Form->input('logistic_id');
         echo $this->Form->input('quantity');
         echo $this->Form->input('remarks');
-        echo $this->Form->input('optionsItems');
+        echo $this->Form->input('category');
         ?>
     </fieldset>
     <?php echo $this->Form->end(__('Submit')); ?>

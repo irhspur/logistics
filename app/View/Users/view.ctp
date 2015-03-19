@@ -31,6 +31,7 @@
 	<ul>
 	    <li><?php echo $this->Html->link(__('Edit Profile'), array('action' => 'edit', $user['User']['id'])); ?> </li>
         <li><?php echo $this->Html->link(__('Request Item'), array('controller' =>'purchases', 'action' => 'add', $user['User']['username'])); ?> </li>
+        <li><?php echo $this->Html->link(__('My Purchases'), array('controller' =>'purchases', 'action' => 'view', $user['User']['username'])); ?> </li>
         <li><?php echo $this->Html->link(__('List Items'), array('controller' => 'logistics', 'action' => 'index')); ?> </li>
     </ul>
 	<?php endif;?>

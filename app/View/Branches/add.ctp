@@ -8,7 +8,7 @@
 		echo $this->Form->input('name');
 		echo $this->Form->input('location');
 		echo $this->Form->input('contact');
-		echo $this->Form->input('branch_manager_id');
+		echo $this->Form->input('branchManager');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

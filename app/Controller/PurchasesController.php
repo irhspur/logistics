@@ -55,18 +55,30 @@ class PurchasesController extends AppController{
 
 		if(!empty($this->data)){
 
-			$log = $this->Purchase->getDataSource()->getLog(false, false);
-			debug($log);
+//			$log = $this->Purchase->getDataSource()->getLog(false, false);
+//			debug($log);
 			$this->request->data['Purchase']['requestee'] = $username;
 			$this->request->data['Purchase']['purchase_status'] = 'pending';
-			echo $this->request->data;
-			/*$this->request->data['Purchase']['logistic_id'] = $this->Purchase->Logistic->find('first', 
-				array('conditions' => array('Logistic.name' => $this->data['Purchase']['logistic_id'])), 
-				array('fields' => 'Logistic.id'));*/
+
+            $vendorId = $this->Purchase->Logistic->find(
+                'first',
+                array(
+                    'fields' => array('vendor_id', 'price'),
+                    'conditions' => array('Logistic.id' => $this->request->data['Purchase']['logistic_id'])
+                )
+            );
+            $this->request->data['Purchase']['vendor_id'] = $vendorId['Logistic']['vendor_id'];
+            $this->request->data['Purchase']['amount'] = $this->request->data['Purchase']['quantity'] * $vendorId['Logistic']['price'] ;
+
+
+            debug($vendorId);
+			/*$this->request->data['Purchase']['vendor_id'] = $this->Purchase->Logistic->find('first',
+				array('conditions' => array('Logistic.id' => $this->data['Purchase']['logistic_id'])),
+				array('fields' => 'Logistic.vendor_id'));*/
 
  			if($this->Purchase->save($this->data)){
 				$this->Session->setFlash('The purchase was added sucessfully');
-				$this->redirect(array('action' => 'index', $username));
+				$this->redirect(array('action' => 'view', $username));
 			}else{
 				$this->Session->setFlash('The purchase was not saved. Please try again');
 			}

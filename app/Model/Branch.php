@@ -86,9 +86,9 @@ class Branch extends AppModel {
  * @var array
  */
 	public $hasOne = array(
-		'BranchManager' => array(
-			'className' => 'BranchManager',
-			'foreignKey' => 'branch_id',
+		'User' => array(
+			'className' => 'User',
+			'foreignKey' => 'user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

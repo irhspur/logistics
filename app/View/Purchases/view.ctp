@@ -8,6 +8,8 @@
 			<th><?php echo $this->Paginator->sort('logistic_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('requestee'); ?></th>
 			<th><?php echo $this->Paginator->sort('vendor_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('quantity'); ?></th>
+			<th><?php echo $this->Paginator->sort('amount'); ?></th>
 			<th><?php echo $this->Paginator->sort('purchase_status'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -16,9 +18,11 @@
 	<?php foreach ($purchases as $purchase): ?>
 	<tr>
 		<td><?php echo $purchase['Purchase']['id']; ?></td>
-		<td><?php echo $purchase['Purchase']['logistic_id']; ?></td>
+		<td><?php echo $purchase['Logistic']['name']; ?></td>
 		<td><?php echo $purchase['Purchase']['requestee']; ?></td>
-		<td><?php echo $purchase['Purchase']['vendor_id']; ?></td>
+		<td><?php echo $purchase['Vendor']['company']; ?></td>
+		<td><?php echo $purchase['Purchase']['quantity']; ?></td>
+		<td><?php echo $purchase['Purchase']['amount']; ?></td>
 		<td><?php echo $purchase['Purchase']['purchase_status']; ?></td>
 		<td class="actions">
 			<?php echo $this->Form->postLink(__('Cancel'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>

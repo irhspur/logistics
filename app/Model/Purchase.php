@@ -10,6 +10,13 @@ class Purchase extends AppModel{
 		'Logistic' => array(
 			'className' => 'Logistic',
 			'foreignKey' => 'logistic_id',
-			)
-	);
+			),
+
+        'Vendor' => array(
+            'className' => 'Vendor',
+            'foreignKey' => 'vendor_id',
+        ),
+    );
+
+
 }
