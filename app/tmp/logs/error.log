@@ -3628,3 +3628,201 @@ Stack Trace:
 #3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-03-19 19:29:34 Error: [NotFoundException] Invalid logistic
+Request URL: /logistics/logistics/view/12
+Stack Trace:
+#0 [internal function]: LogisticsController->view('12')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LogisticsController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(LogisticsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-19 19:29:46 Error: [NotFoundException] Invalid logistic
+Request URL: /logistics/logistics/view/12
+Stack Trace:
+#0 [internal function]: LogisticsController->view('12')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LogisticsController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(LogisticsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-19 19:31:35 Error: [NotFoundException] Invalid logistic
+Request URL: /logistics/logistics/view/12
+Stack Trace:
+#0 [internal function]: LogisticsController->view('12')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LogisticsController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(LogisticsController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-19 19:53:23 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Users\requests.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Users\\requests.ctp',
+)
+Request URL: /logistics/users/requests
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-19 20:01:35 Error: Fatal Error (1): Cannot use string offset as an array in [E:\xampp\htdocs\logistics\app\View\Users\requests.ctp, line 16]
+2015-03-19 20:01:35 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /logistics/users/requests
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', 'E:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', 'E:\xampp\htdocs...', 16, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', 'E:\xampp\htdocs...', 16, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 12:45:29 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\UsersController.php, line 157]
+2015-03-21 12:45:29 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/users/report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 157)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 157, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 157, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 12:46:16 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\UsersController.php, line 157]
+2015-03-21 12:46:16 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/users/report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 157)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 157, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 157, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 12:52:42 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\UsersController.php, line 153]
+2015-03-21 12:52:42 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/users/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 153)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 153, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 153, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 12:54:10 Error: [MissingControllerException] Controller class PurhcasesController could not be found.
+Exception Attributes: array (
+  'class' => 'PurhcasesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/purhcases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 12:54:22 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Purchases\select_report.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Purchases\\select_report.ctp',
+)
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 12:57:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1630 FUNCTION purchase.MONTH does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Purchase), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('list', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php(140): Model->find('list', Array)
+#7 [internal function]: PurchasesController->select_report()
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchasesController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-21 13:01:33 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php, line 140]
+2015-03-21 13:01:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 140)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 140, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 140, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:01:41 Error: Fatal Error (1): Call to a member function format() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php, line 134]
+2015-03-21 13:01:41 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 134, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 134, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:02:54 Error: Fatal Error (1): Call to a member function format() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php, line 134]
+2015-03-21 13:02:54 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 134, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 134, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:02:57 Error: Fatal Error (1): Call to a member function format() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php, line 134]
+2015-03-21 13:02:57 Error: [FatalErrorException] Call to a member function format() on a non-object
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 134)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 134, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 134, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:43:14 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php, line 173]
+2015-03-21 13:43:14 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/purchases/report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 173)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 173, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 173, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:43:34 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Purchases\report.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Purchases\\report.ctp',
+)
+Request URL: /logistics/purchases/report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:45:46 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php, line 154]
+2015-03-21 13:45:46 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 154)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 154, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 154, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 16:21:05 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\xampp\htdocs\logistics\app\View\Purchases\report.ctp, line 4]
+2015-03-21 16:21:05 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /logistics/purchases/report/03/2015/nasus
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 4, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 4, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

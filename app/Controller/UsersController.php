@@ -130,4 +130,23 @@ class UsersController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+
+    /**
+     * requests method
+     *
+     * @throws NotFoundException
+     * @param string $id
+     * @return void
+     */
+    public function requests() {
+
+        $options = array('conditions' => array('User.roles' => array('employee', 'branch_manager')));
+        $this->set('users', $this->User->find('all', $options));
+//        $this->set('users', $this->Paginator->paginate());
+    }
+
+
+
+
+
 }

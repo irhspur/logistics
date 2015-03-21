@@ -11,6 +11,7 @@
 			<th><?php echo $this->Paginator->sort('quantity'); ?></th>
 			<th><?php echo $this->Paginator->sort('amount'); ?></th>
 			<th><?php echo $this->Paginator->sort('purchase_status'); ?></th>
+			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -22,10 +23,21 @@
 		<td><?php echo $purchase['Purchase']['requestee']; ?></td>
 		<td><?php echo $purchase['Vendor']['company']; ?></td>
 		<td><?php echo $purchase['Purchase']['quantity']; ?></td>
+
 		<td><?php echo $purchase['Purchase']['amount']; ?></td>
 		<td><?php echo $purchase['Purchase']['purchase_status']; ?></td>
+		<td><?php echo $purchase['Purchase']['created']; ?></td>
 		<td class="actions">
-			<?php echo $this->Form->postLink(__('Cancel'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+            <?php if($admin):?>
+                <?php if($purchase['Purchase']['purchase_status'] == 'pending'):?>
+                    <?php echo $this->Form->postLink(__('Approve Request'), array('action' => 'approve', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to approve purchase # %s?', $purchase['Purchase']['id'])); ?>
+                <?php else:?>
+                    <?php echo $this->Form->postLink(__('Disapprove Request'), array('action' => 'disapprove', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to disapprove purchase # %s?', $purchase['Purchase']['id'])); ?>
+                <?php endif;?>
+                <?php echo $this->Form->postLink(__('Cancel Purchase'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+            <?php else:?>
+                <?php echo $this->Form->postLink(__('Cancel Purchase'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+            <?php endif;?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -47,9 +59,26 @@
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
+    <?php if($admin):?>
+        <ul>
+            <li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('New Branch'), array('controller' => 'branches', 'action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('New Item'), array('controller' => 'logistics', 'action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('New Vendor'), array('controller' => 'vendors', 'action' =>'add')); ?></li>
+            <li>------------------------------</li>
+            <li><?php echo $this->Html->link(__('Show Branches'), array('controller' => 'branches', 'action' => 'index')); ?></li>
+            <li><?php echo $this->Html->link(__('Show Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
+            <li><?php echo $this->Html->link(__('Show Vendors'), array('controller' => 'vendors', 'action' => 'index')); ?></li>
+            <li>------------------------------</li>
+            <li><?php echo $this->Html->link(__('Item Requests'), array('controller' => 'users', 'action' => 'requests')); ?></li>
+            <li>------------------------------</li>
+            <li><?php echo $this->Html->link(__('Purchase Report'), array('controller' => 'purchases', 'action' => 'select_report')); ?></li>
+        </ul>
+    <?php else:?>
 	<ul>
 		<li><?php echo $this->Html->link(__('My Profile'), array('controller' =>'users', 'action' => 'view', $current_user['id'])); ?></li>
 		<li><?php echo $this->Html->link(__('Request Item'), array('controller' =>'purchases', 'action' => 'add', $current_user['username'])); ?> </li>
         <li><?php echo $this->Html->link(__('List Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
     </ul>
+    <?php endif;?>
 </div>

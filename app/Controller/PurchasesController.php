@@ -107,5 +107,92 @@ class PurchasesController extends AppController{
 		$this->Session->setFlash('The purchase has been deleted');
 		$this->redirect(array('action' => 'view', $username));
 	}
+
+    public function approve($id = NULL, $username = NULL){
+
+        $this->Purchase->read(NULL, $id);
+        $this->Purchase->set('purchase_status',  'approved');
+        $this->Purchase->save();
+        $this->Session->setFlash('The purchase has been approved');
+        $this->redirect(array('action' => 'view', $username));
+    }
+
+    public function disapprove($id = NULL, $username = NULL){
+
+        $this->Purchase->read(NULL, $id);
+        $this->Purchase->set('purchase_status',  'pending');
+        $this->Purchase->save();
+        $this->Session->setFlash('The purchase has been disapproved');
+        $this->redirect(array('action' => 'view', $username));
+    }
+
+    /**
+     * select report method
+     */
+
+    public function select_report() {
+        App::uses('CakeTime', 'Utility');
+
+        //first extract the created datetime
+        $created = $this->Purchase->find('list',array('fields' => 'created'));
+        $users = $this->Purchase->find('list', array('fields' => 'requestee'));
+
+        //for each date separate by index number and populate into the respective month and year arrays by the same index
+        foreach($created as $key => $val){
+            $month[$key] = CakeTime::format($val, '%m');
+            $year[$key] = CakeTime::format($val, '%Y');
+        }
+        $this->set('months', array_filter(array_unique($month)));
+        $this->set('years', array_filter(array_unique($year)));
+
+        foreach($users as $key => $val) {
+            $user[$key] = $val;
+        }
+        //default value
+        $user['Overall'] = 'Overall';
+        $this->set('users', array_filter(array_unique($user)));
+
+        if(!empty($this->data)){
+            if($this->data){
+//                $this->Session->setFlash('The purchase was added sucessfully'.$month[$this->request->data['Purchase']['month']]);
+                $this->redirect(array('action' =>
+                    'report',
+                    $month[$this->request->data['Purchase']['month']],
+                    $year[$this->request->data['Purchase']['year']],
+                    $user[$this->request->data['Purchase']['user']]
+                ));
+            }else{
+                $this->Session->setFlash('No purchase was not found. Please try again');
+            }
+        }
+    }
+
+    /**
+     * report method
+     */
+
+    public function report($month = NULL, $year = NULL, $requestee = 'Overall') {
+
+        $this->Purchase->recursive = 0;
+        $this->set('purchases', $this->Paginator->paginate());
+
+        if($requestee == 'Overall') {
+            $condition = array('conditions' => array(
+                'MONTH(Purchase.created)' => $month,
+                'YEAR(Purchase.created)' => $year)
+            );
+        } else {
+            $condition = array('conditions' => array(
+                'MONTH(Purchase.created)' => $month,
+                'YEAR(Purchase.created)' => $year,
+                'Purchase.requestee' => $requestee)
+            );
+        }
+        $this->set('purchases', $this->Purchase->find('all', $condition));
+        $this->set('month', $month);
+        $this->set('year', $year);
+        $this->set('requestee', $requestee);
+    }
+
 }
 
