@@ -7,7 +7,7 @@
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('location'); ?></th>
 			<th><?php echo $this->Paginator->sort('contact'); ?></th>
-			<th><?php echo $this->Paginator->sort('branch_manager_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -18,7 +18,7 @@
 		<td><?php echo h($branch['Branch']['name']); ?>&nbsp;</td>
 		<td><?php echo h($branch['Branch']['location']); ?>&nbsp;</td>
 		<td><?php echo h($branch['Branch']['contact']); ?>&nbsp;</td>
-		<td><?php echo h($branch['Branch']['branch_manager_id']); ?>&nbsp;</td>
+		<td><?php echo h($branch['Branch']['user_id']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $branch['Branch']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $branch['Branch']['id'])); ?>

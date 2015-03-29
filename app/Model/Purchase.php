@@ -16,6 +16,11 @@ class Purchase extends AppModel{
             'className' => 'Vendor',
             'foreignKey' => 'vendor_id',
         ),
+
+        'User' => array(
+            'className' => 'User',
+            'foreignKey' => 'requestee'
+        )
     );
 
 

@@ -1,7 +1,7 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * BranchManager Model
+ * User Model
  *
  * @property Branch $Branch
  */
@@ -96,7 +96,7 @@ class User extends AppModel {
 	);
 
 	function matchPasswords($data){
-		if($data['password'] == $this->data['BranchManager']['password_confirmation']){
+		if($data['password'] == $this->data['User']['password_confirmation']){
 			return TRUE;
 		}
 		$this->invaliate('password_confirmation', 'The passwords donot match');
@@ -105,8 +105,8 @@ class User extends AppModel {
 
 
 	function hashPasswords($data){
-		if(isset($this->data['BranchManager']['password'])){
-			$this->data['BranchManager']['password'] = Security::hash($this->data['BranchManager']['password'], NULL, TRUE);
+		if(isset($this->data['User']['password'])){
+			$this->data['User']['password'] = Security::hash($this->data['User']['password'], NULL, TRUE);
 			return $data;
 		}
 		return $data;

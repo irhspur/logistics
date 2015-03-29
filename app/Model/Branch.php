@@ -30,16 +30,16 @@ class Branch extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'maxLength' => array(
-				'rule' => array('maxLength'),
-				//'message' => 'Your custom message here',
+				'rule' => array('maxLength', 50),
+				'message' => 'Length of the name exceeds 50',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'minLength' => array(
-				'rule' => array('minLength'),
-				//'message' => 'Your custom message here',
+				'rule' => array('minLength', 5),
+				'message' => 'Name too short',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -66,17 +66,7 @@ class Branch extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'branch_manager_id' => array(
-			'n' => array(
-				'rule' => array('n'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-	);
+    );
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
@@ -88,7 +78,7 @@ class Branch extends AppModel {
 	public $hasOne = array(
 		'User' => array(
 			'className' => 'User',
-			'foreignKey' => 'user_id',
+			'foreignKey' => 'branch_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

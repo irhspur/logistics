@@ -30,7 +30,8 @@
 		<td class="actions">
             <?php if($admin):?>
                 <?php if($purchase['Purchase']['purchase_status'] == 'pending'):?>
-                    <?php echo $this->Form->postLink(__('Approve Request'), array('action' => 'approve', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to approve purchase # %s?', $purchase['Purchase']['id'])); ?>
+                    <?php /*echo $this->Form->postLink(__('Approve Request'), array('action' => 'approve', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to approve purchase # %s?', $purchase['Purchase']['id'])); */?>
+                    <?php echo $this->Form->postLink(__('Approve Request'), array('action' => 'poaf_form', $purchase['Purchase']['id'], $purchase['Purchase']['requestee'])); ?>
                 <?php else:?>
                     <?php echo $this->Form->postLink(__('Disapprove Request'), array('action' => 'disapprove', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to disapprove purchase # %s?', $purchase['Purchase']['id'])); ?>
                 <?php endif;?>
@@ -61,7 +62,7 @@
 	<h3><?php echo __('Actions'); ?></h3>
     <?php if($admin):?>
         <ul>
-            <li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
+            <li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></li>
             <li><?php echo $this->Html->link(__('New Branch'), array('controller' => 'branches', 'action' => 'add')); ?></li>
             <li><?php echo $this->Html->link(__('New Item'), array('controller' => 'logistics', 'action' => 'add')); ?></li>
             <li><?php echo $this->Html->link(__('New Vendor'), array('controller' => 'vendors', 'action' =>'add')); ?></li>
