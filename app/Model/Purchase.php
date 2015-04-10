@@ -19,7 +19,12 @@ class Purchase extends AppModel{
 
         'User' => array(
             'className' => 'User',
-            'foreignKey' => 'requestee'
+            'foreignKey' => 'user_id'
+        ),
+
+        'Branch' => array(
+            'className' => 'Branch',
+            'foreignKey' => 'branch_id'
         )
     );
 

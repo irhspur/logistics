@@ -55,17 +55,13 @@ class User extends AppModel {
 				'rule' => 'matchPasswords',
 				'message' => 'The passwords donot match'
 			)	
-		)	
-		/*'branch_id' => array(
-			'n' => array(
-				'rule' => array('n'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),*/
+		),
+		'branch_id' => array(
+            'Branch Taken' => array(
+                'rule' => array('hasDuplicates'),
+                'message' => 'That branch already has a branch manager'
+            ),
+		),
 		/*'contact' => array(
 			'25_24' => array(
 				'rule' => array('25,24'),
@@ -116,6 +112,21 @@ class User extends AppModel {
 		$this->hashPasswords(NULL, TRUE);
 		return TRUE;
 	}
+
+    public function hasDuplicates($check) {
+        // $check will have value: array('Branch Taken' => 'some-value')
+        // $limit will have value: 25
+
+        if($this->data['User']['roles'] == 'branch_manager') {
+            $existingPromoCount = $this->find('count', array(
+                'conditions' => $check,
+                'recursive' => -1
+            ));
+            return $existingPromoCount == 0;
+        } else {
+            return TRUE;
+        }
+    }
 }
 
 

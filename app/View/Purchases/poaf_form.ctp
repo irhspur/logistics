@@ -6,14 +6,14 @@
             <?php echo h($purchase['Purchase']['id']); ?>
             &nbsp;
         </dd>
-        <dt><?php echo __('Branch/Department'); ?></dt>
+        <dt><?php echo __('Branch'); ?></dt>
         <dd>
-            <?php echo "To be filled"/*h($user['Purchase']['branch_id'])*/; ?>
+            <?php echo h($purchase['Branch']['name']); ?>
             &nbsp;
         </dd>
         <dt><?php echo __('Username'); ?></dt>
         <dd>
-            <?php echo h($purchase['Purchase']['requestee']); ?>
+            <?php echo h($purchase['User']['username']); ?>
             &nbsp;
         </dd>
     </dl>

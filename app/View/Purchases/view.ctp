@@ -8,6 +8,7 @@
 			<th><?php echo $this->Paginator->sort('logistic_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('requestee'); ?></th>
 			<th><?php echo $this->Paginator->sort('vendor_id'); ?></th>
+            <th><?php echo $this->Paginator->sort('branch_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('quantity'); ?></th>
 			<th><?php echo $this->Paginator->sort('amount'); ?></th>
 			<th><?php echo $this->Paginator->sort('purchase_status'); ?></th>
@@ -20,8 +21,9 @@
 	<tr>
 		<td><?php echo $purchase['Purchase']['id']; ?></td>
 		<td><?php echo $purchase['Logistic']['name']; ?></td>
-		<td><?php echo $purchase['Purchase']['requestee']; ?></td>
-		<td><?php echo $purchase['Vendor']['company']; ?></td>
+        <td><?php echo $purchase['User']['username']; ?></td>
+        <td><?php echo $purchase['Vendor']['company']; ?></td>
+        <td><?php echo $purchase['Branch']['name']; ?></td>
 		<td><?php echo $purchase['Purchase']['quantity']; ?></td>
 
 		<td><?php echo $purchase['Purchase']['amount']; ?></td>

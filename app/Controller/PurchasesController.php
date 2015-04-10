@@ -70,6 +70,17 @@ class PurchasesController extends AppController{
             $this->request->data['Purchase']['vendor_id'] = $vendorId['Logistic']['vendor_id'];
             $this->request->data['Purchase']['amount'] = $this->request->data['Purchase']['quantity'] * $vendorId['Logistic']['price'] ;
 
+            $userId = $this->Purchase->User->find(
+                'first',
+                array(
+                    'fields' => array('id', 'branch_id'),
+                    'conditions' => array('User.username' => $this->request->data['Purchase']['requestee'])
+                )
+            );
+            $this->request->data['Purchase']['user_id'] = $userId['User']['id'];
+            $this->request->data['Purchase']['branch_id'] = $userId['User']['branch_id'];
+
+
 
             debug($vendorId);
 			/*$this->request->data['Purchase']['vendor_id'] = $this->Purchase->Logistic->find('first',
