@@ -67,6 +67,7 @@
             <li><?php echo $this->Html->link(__('Edit Profile'), array('action' => 'edit', $current_user['id'])); ?></li>
             <li><?php echo $this->Html->link(__('Request Item'), array('controller' => 'purchases', 'action' => 'add', $current_user['username'])); ?></li>
             <li><?php echo $this->Html->link(__('My Purchases'), array('controller' => 'purchases', 'action' => 'view', $current_user['username'])); ?> </li>
+            <li><?php echo $this->Html->link(__('Create a post'), array('controller' => 'posts', 'action' => 'add', $current_user['id'])); ?></li>
         </ul>
     <?php endif;?>
 </div>

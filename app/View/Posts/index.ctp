@@ -1,6 +1,5 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
-<h1>Blog posts</h1>
 <table>
     <tr>
         <th>Id</th>

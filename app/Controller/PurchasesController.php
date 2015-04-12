@@ -227,5 +227,17 @@ class PurchasesController extends AppController{
         $this->set('requestee', $requestee);
     }
 
+    public function cancel_request($id = NULL)
+    {
+        if(empty($this->data)){
+            $this->data = $this->Purchase->read(NULL, $id);
+        }else {
+            if($this->Purchase->save($this->data)){
+                $this->Session->setFlash('The purchase was rejected');
+                $this->redirect(array('controller' => 'users', 'action' => 'requests'));
+            }
+        }
+    }
+
 }
 

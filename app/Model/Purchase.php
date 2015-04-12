@@ -2,10 +2,10 @@
 
 class Purchase extends AppModel{
 
-/**
-* hasOne association
-* @var array
-*/
+    /**
+    * belongsTo association
+    * @var array
+    */
 	public $belongsTo = array(
 		'Logistic' => array(
 			'className' => 'Logistic',

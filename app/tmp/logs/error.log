@@ -4087,3 +4087,179 @@ Stack Trace:
 #3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-04-12 09:28:28 Error: [NotFoundException] Invalid User
+Request URL: /logistics/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-12 14:06:56 Error: [MissingActionException] Action PurchasesController::requests() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchasesController',
+  'action' => 'requests',
+)
+Request URL: /logistics/purchases/requests
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-12 15:18:02 Error: Fatal Error (4): syntax error, unexpected T_IF in [E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php, line 242]
+2015-04-12 15:18:02 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /logistics/purchases/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 242, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 242, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-12 15:26:07 Error: [NotFoundException] Invalid User
+Request URL: /logistics/users/view/25
+Stack Trace:
+#0 [internal function]: UsersController->view('25')
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-12 15:37:08 Error: [MissingControllerException] Controller class ReasonForTheCancelsController could not be found.
+Exception Attributes: array (
+  'class' => 'ReasonForTheCancelsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/reason%20for%20the%20cancels/cancel_request
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-12 15:37:28 Error: [MissingControllerException] Controller class ReasonForTheCancelsController could not be found.
+Exception Attributes: array (
+  'class' => 'ReasonForTheCancelsController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/reason%20for%20the%20cancels/cancel_request
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-12 16:49:58 Error: [MissingActionException] Action PurchasesController::alert("Hey There");() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchasesController',
+  'action' => 'alert("Hey There");',
+)
+Request URL: /logistics/purchases/alert(%22Hey%20There%22);
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-12 17:14:59 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\View\Purchases\view.ctp, line 32]
+2015-04-12 17:14:59 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/purchases/view/nasus
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-12 17:15:02 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\View\Purchases\view.ctp, line 32]
+2015-04-12 17:15:02 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/purchases/view/nasus
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-12 17:15:03 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [E:\xampp\htdocs\logistics\app\View\Purchases\view.ctp, line 32]
+2015-04-12 17:15:03 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /logistics/purchases/view/nasus
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-12 17:15:43 Error: Fatal Error (1): Call to a member function flash() on a non-object in [E:\xampp\htdocs\logistics\app\View\Purchases\view.ctp, line 32]
+2015-04-12 17:15:43 Error: [FatalErrorException] Call to a member function flash() on a non-object
+Request URL: /logistics/purchases/view/nasus
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 32, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-12 17:21:54 Error: Fatal Error (1): Call to undefined function alert() in [E:\xampp\htdocs\logistics\app\View\Purchases\view.ctp, line 32]
+2015-04-12 17:21:54 Error: [FatalErrorException] Call to undefined function alert()
+Request URL: /logistics/purchases/view/nasus
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\xampp\htdocs...', 32, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\xampp\htdocs...', 32, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-12 17:24:58 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [E:\xampp\htdocs\logistics\app\View\Purchases\view.ctp, line 35]
+2015-04-12 17:24:58 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /logistics/purchases/view/nasus
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 35, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 35, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-12 18:36:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'invaliate' at line 1
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('invaliate', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('invaliate', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('invaliate', Array, Array)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(808): DboSource->query('invaliate', Array, Object(User))
+#5 E:\xampp\htdocs\logistics\app\Model\User.php(110): Model->__call('invaliate', Array)
+#6 E:\xampp\htdocs\logistics\app\Model\User.php(110): User->invaliate('password_confir...', 'The passwords d...')
+#7 [internal function]: User->matchPasswords(Array, Array)
+#8 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationSet.php(135): CakeValidationRule->process('password', Array, Array)
+#10 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(267): CakeValidationSet->validate(Array, false)
+#11 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(3367): ModelValidator->validates(Array)
+#13 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1758): Model->validates(Array)
+#14 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(78): Model->save(Array)
+#15 [internal function]: UsersController->add()
+#16 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2015-04-12 18:36:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'invaliate' at line 1
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('invaliate', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('invaliate', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('invaliate', Array, Array)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(808): DboSource->query('invaliate', Array, Object(User))
+#5 E:\xampp\htdocs\logistics\app\Model\User.php(110): Model->__call('invaliate', Array)
+#6 E:\xampp\htdocs\logistics\app\Model\User.php(110): User->invaliate('password_confir...', 'The passwords d...')
+#7 [internal function]: User->matchPasswords(Array, Array)
+#8 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationSet.php(135): CakeValidationRule->process('password', Array, Array)
+#10 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(267): CakeValidationSet->validate(Array, false)
+#11 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(3367): ModelValidator->validates(Array)
+#13 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1758): Model->validates(Array)
+#14 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(78): Model->save(Array)
+#15 [internal function]: UsersController->add()
+#16 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}

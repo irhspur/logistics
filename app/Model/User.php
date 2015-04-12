@@ -28,15 +28,27 @@ class User extends AppModel {
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				'message' => 'Firstname cannot be empty.'
-			)
+			),
+            'nonNumeric' => array(
+                'rule' => '/^[a-zA-Z]*$/',
+                'message' => 'Firstname must not contain numbers'
+            )
 		),
 		'lastname' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				'message' => 'Lastname cannot be empty.'
-			)
+			),
+            'nonNumeric' => array(
+                'rule' => '/^[a-zA-Z]*$/',
+                'message' => 'Lastname must not contain numbers'
+            )
 		),
 		'username' => array(
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Username cannot be empty.'
+            ),
 			'Username Taken' => array(
 				'rule' => 'isUnique',
 				'message' => 'That username has already been taken. Please try another one'
@@ -44,9 +56,17 @@ class User extends AppModel {
 			'The username must be between 5 and 15 characters' => array(
 				'rule' => array('between', 5 ,15),
 				'message' => 'The username must be between 5 and 15 characters'
-			)
+			),
+            'alphanumeric' => array(
+                'rule' => 'alphanumeric',
+                'message' => 'Username must be alphanumeric'
+            )
 		),
 		'password' => array(
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Password cannot be empty'
+            ),
 			'The password must be between 5 and 15 characters' => array(
 				'rule' => array('between', 5 ,15),
 				'message' => 'The password must be between 5 and 15 characters'
@@ -62,16 +82,21 @@ class User extends AppModel {
                 'message' => 'That branch already has a branch manager'
             ),
 		),
-		/*'contact' => array(
+		'contact' => array(
 			'25_24' => array(
-				'rule' => array('25,24'),
-				//'message' => 'Your custom message here',
-				'allowEmpty' => false
-				//'required' => false,
+				'message' => 'Please fill a contact number',
+				'allowEmpty' => false,
+				'required' => true,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			)
-		),*/
+		),
+        'roles' => array(
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Please pick a role'
+            )
+        )
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

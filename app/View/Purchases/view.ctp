@@ -27,17 +27,29 @@
 		<td><?php echo $purchase['Purchase']['quantity']; ?></td>
 
 		<td><?php echo $purchase['Purchase']['amount']; ?></td>
-		<td><?php echo $purchase['Purchase']['purchase_status']; ?></td>
+		<td><?php if($purchase['Purchase']['purchase_status'] == 'rejected'): ?>
+                <?php
+                    echo $this->Form->postLink(
+                        __($purchase['Purchase']['purchase_status']),
+                        array(),
+                        array(),
+                        __('Your purchase was rejected due to following reason:'."\n\r".'- %s', $purchase['Purchase']['cancel_reason']));
+                ?>
+            <?php else:?>
+                <?php echo $purchase['Purchase']['purchase_status']; ?>
+            <?php endif;?>
+
+        </td>
 		<td><?php echo $purchase['Purchase']['created']; ?></td>
 		<td class="actions">
             <?php if($admin):?>
-                <?php if($purchase['Purchase']['purchase_status'] == 'pending'):?>
+                <?php if($purchase['Purchase']['purchase_status'] == 'pending' || $purchase['Purchase']['purchase_status'] == 'rejected'):?>
                     <?php /*echo $this->Form->postLink(__('Approve Request'), array('action' => 'approve', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to approve purchase # %s?', $purchase['Purchase']['id'])); */?>
                     <?php echo $this->Form->postLink(__('Approve Request'), array('action' => 'poaf_form', $purchase['Purchase']['id'], $purchase['Purchase']['requestee'])); ?>
                 <?php else:?>
                     <?php echo $this->Form->postLink(__('Disapprove Request'), array('action' => 'disapprove', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to disapprove purchase # %s?', $purchase['Purchase']['id'])); ?>
                 <?php endif;?>
-                <?php echo $this->Form->postLink(__('Cancel Purchase'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+                <?php echo $this->Form->postLink(__('Reject Purchase'), array('action' => 'cancel_request', $purchase['Purchase']['id']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
             <?php else:?>
                 <?php echo $this->Form->postLink(__('Cancel Purchase'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
             <?php endif;?>

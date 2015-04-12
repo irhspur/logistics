@@ -1,4 +1,4 @@
-<div class="admins form">
+<div class="edit form">
 <?php echo $this->Form->create('Admin'); ?>
 	<fieldset>
 		<legend><?php echo __('Edit Admin'); ?></legend>

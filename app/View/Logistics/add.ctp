@@ -3,7 +3,15 @@
 	<fieldset>
 		<legend><?php echo __('Add Logistic'); ?></legend>
 	<?php
-		echo $this->Form->input('category');
+//		echo $this->Form->input('category');
+        echo $this->Form->input('category', array(
+            'options' => array(
+                'Stationary' => 'Stationary',
+                'Furniture' => 'Furniture',
+                'Food and Beverages' => 'Food and Beverages',
+                'Vehicle' => 'Vehicle'),
+            'empty' => '(Choose one)'
+        ));
 		echo $this->Form->input('name');
 		echo $this->Form->input('price');
 		echo $this->Form->input('vendor_id');

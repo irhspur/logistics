@@ -12,9 +12,13 @@ class PostsController extends AppController{
 		$this->set('post', $this->Post->read(NULL, $id)); //set method sends the resuts to the view
 	}
 
-	public function add(){
+	public function add($id = NULL){
 
 		if(!empty($this->data)){//kind of like $_POST but in formattted way in array
+
+            //set the user
+            $this->data['Posts']['user_id'] = $id;
+
 			if($this->Post->save($this->data)){ //saves the data and checks if the save was sucessful..
 				$this->Session->setFlash('The post was sucessfully added');
 				$this->redirect(array('action' => 'index'));
