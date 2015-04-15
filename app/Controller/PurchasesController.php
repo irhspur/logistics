@@ -38,6 +38,14 @@ class PurchasesController extends AppController{
 		$this->set('purchases', $this->Purchase->find('all', $options));
 	}
 
+    public function view_approved() {
+        $this->Purchase->recursive = 0;
+        $this->set('purchases', $this->Paginator->paginate());
+
+        $options = array('conditions' => array('Purchase.purchase_status' => 'approved'));
+        $this->set('purchases', $this->Purchase->find('all', $options));
+    }
+
 	public function add($username){
 
         //store unique categories into $categories
@@ -138,6 +146,36 @@ class PurchasesController extends AppController{
     }
 
     /**
+     * View to display pre-filled egr form
+     * @param null $id
+     * @param null $username
+     */
+    public function egr_form($id = NULL, $username = NULL) {
+
+        if (!$this->Purchase->exists($id)) {
+            throw new NotFoundException(__('Invalid User'));
+        }
+        $options = array('conditions' => array('Purchase.' . $this->Purchase->primaryKey => $id));
+        $this->set('purchase', $this->Purchase->find('first', $options));
+
+        $userOptions = array('conditions' => array('User.username' => $username));
+        $this->set('user', $this->Purchase->find('first', $userOptions));
+    }
+
+    /**
+     * @param null $id
+     * @param null $username
+     */
+    public function dispatch($id = NULL, $username = NULL){
+
+        $this->Purchase->read(NULL, $id);
+        $this->Purchase->set('purchase_status',  'dispatched');
+        $this->Purchase->save();
+        $this->Session->setFlash('The purchase has been dispatched');
+        $this->redirect(array('action' => 'view_approved'));
+    }
+
+    /**
      * @param null $id
      * @param null $username
      */
@@ -157,6 +195,26 @@ class PurchasesController extends AppController{
         $this->Purchase->save();
         $this->Session->setFlash('The purchase has been disapproved');
         $this->redirect(array('action' => 'view', $username));
+    }
+
+    public function delivered($id = NULL, $userId = NULL){
+
+        $this->Purchase->read(NULL, $id);
+        $this->Purchase->set('purchase_status',  'delivered');
+        $this->Purchase->save();
+        $this->Session->setFlash('The purchase deliverance has been confirmed');
+        $this->redirect(array('action' => 'view_dispatched', $userId));
+    }
+
+    public function view_dispatched($userId = NULL){
+        $this->Purchase->recursive = 0;
+        $this->set('purchases', $this->Paginator->paginate());
+
+        $options = array('conditions' => array(
+            'Purchase.purchase_status' => 'dispatched',
+            'Purchase.user_id' => $userId
+        ));
+        $this->set('purchases', $this->Purchase->find('all', $options));
     }
 
     /**

@@ -1,59 +1,13 @@
-<div class="users view">
-    <h2><?php echo __('Purchase Order Approval Form'); ?></h2>
-    <dl>
-        <dt><?php echo __('Id'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Purchase']['id']); ?>
-            &nbsp;
-        </dd>
-        <dt><?php echo __('Branch'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Branch']['name']); ?>
-            &nbsp;
-        </dd>
-        <dt><?php echo __('Username'); ?></dt>
-        <dd>
-            <?php echo h($purchase['User']['username']); ?>
-            &nbsp;
-        </dd>
-    </dl>
-    <hr>
-    <dl>
-        <dt><?php echo __('Item'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Logistic']['name']); ?>
-            &nbsp;
-        </dd>
-        <dt><?php echo __('Quantity'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Purchase']['quantity']); ?>
-            &nbsp;
-        </dd>
-        <dt><?php echo __('Amount'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Purchase']['amount']); ?>
-            &nbsp;
-        </dd>
-        <dt><?php echo __('Date of purchase'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Purchase']['created']); ?>
-            &nbsp;
-        </dd>
-    </dl>
-    <hr>
-    <dl>
-        <dt><?php echo __('Vendor'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Vendor']['company']); ?>
-            &nbsp;
-        </dd>
-        <dt><?php echo __('Vendor Name'); ?></dt>
-        <dd>
-            <?php echo h($purchase['Vendor']['name_of_person']); ?>
-            &nbsp;
-        </dd>
-    </dl>
-    <?php echo $this->Form->postLink(__('Approve Request'), array('action' => 'approve', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to approve purchase # %s?', $purchase['Purchase']['id'])); ?>
+<div class="cancel form">
+    <?php echo $this->Form->create('Dispatch'); ?>
+    <fieldset>
+        <legend><?php echo __('Dispatch Details'); ?></legend>
+        <?php
+        echo $this->Form->input('dispatch_date');
+        echo $this->Form->input('purchase_id', array('type' => 'hidden'));
+        ?>
+    </fieldset>
+    <?php echo $this->Form->end(__('Dispatch')); ?>
 </div>
 <div class="actions">
     <h3><?php echo __('Actions'); ?></h3>

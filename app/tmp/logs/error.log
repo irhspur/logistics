@@ -4263,3 +4263,85 @@ Stack Trace:
 #18 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #19 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #20 {main}
+2015-04-15 17:15:28 Error: Fatal Error (1): Cannot unset string offsets in [E:\xampp\htdocs\logistics\lib\Cake\Controller\Component\AuthComponent.php, line 782]
+2015-04-15 17:15:28 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot unset st...', 'E:\xampp\htdocs...', 782)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', 'E:\xampp\htdocs...', 782, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', 'E:\xampp\htdocs...', 782, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-15 17:36:56 Error: [MissingControllerException] Controller class DispathcesController could not be found.
+Exception Attributes: array (
+  'class' => 'DispathcesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/dispathces
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-15 17:55:06 Error: [MissingActionException] Action PurchasesController::view_approved() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchasesController',
+  'action' => 'view_approved',
+)
+Request URL: /logistics/purchases/view_approved
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-15 18:03:44 Error: [MissingControllerException] Controller class DispatchDatesController could not be found.
+Exception Attributes: array (
+  'class' => 'DispatchDatesController',
+  'plugin' => NULL,
+)
+Request URL: /logistics/dispatch%20dates/approve
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-15 18:06:49 Error: [MissingActionException] Action PurchasesController::dispatch() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchasesController',
+  'action' => 'dispatch',
+)
+Request URL: /logistics/purchases/dispatch
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-15 21:34:52 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\DispatchesController.php, line 46]
+2015-04-15 21:34:52 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/dispatches/add/34
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 46, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 46, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-15 21:38:18 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\DispatchesController.php, line 35]
+2015-04-15 21:38:18 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/dispatches/view
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 35, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 35, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-15 22:41:59 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Purchases\view_dispatched.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Purchases\\view_dispatched.ctp',
+)
+Request URL: /logistics/purchases/view_dispatched/12
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

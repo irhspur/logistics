@@ -1,5 +1,5 @@
 <div class="users view">
-    <h2><?php echo __('Purchase Order Approval Form'); ?></h2>
+    <h2><?php echo __('Evidence of Goods Received Form'); ?></h2>
     <dl>
         <dt><?php echo __('Id'); ?></dt>
         <dd>
@@ -53,7 +53,7 @@
             &nbsp;
         </dd>
     </dl>
-    <?php echo $this->Form->postLink(__('Approve Request'), array('action' => 'approve', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to approve purchase # %s?', $purchase['Purchase']['id'])); ?>
+    <?php echo $this->Form->postLink(__('Confirm Deliverance'), array('action' => 'delivered', $purchase['Purchase']['id'], $purchase['Purchase']['user_id']), array(), __('Are you sure you want to confirm the deliverance of the purchase # %s?', $purchase['Purchase']['id'])); ?>
 </div>
 <div class="actions">
     <h3><?php echo __('Actions'); ?></h3>
