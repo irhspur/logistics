@@ -51,6 +51,7 @@ class AppController extends Controller {
 		$this->Auth->allow('logout');
 
 		$this->set('admin', $this->_isAdmin());
+		$this->set('branchManager', $this->_isBranchManager());
 		$this->set('logged_in', $this->Auth->loggedIn());
 		$this->set('current_user', $this->Auth->user());
 		$this->set('roles', 'employee');
@@ -64,6 +65,14 @@ class AppController extends Controller {
 		}
 		return $admin;		
 	}
+
+    function _isBranchManager(){ //underscore represents private function
+        $branchManager = FALSE; //set the default value of false
+        if($this->Auth->user('roles') == 'branch_manager'){
+            $branchManager = TRUE;
+        }
+        return $branchManager;
+    }
 
 	function _loggedIn(){
 		$logged_in = FALSE;

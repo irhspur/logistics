@@ -14,7 +14,7 @@ class User extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'id' => array(
+		/*'id' => array(
 			'n' => array(
 				'rule' => array('n'),
 				//'message' => 'Your custom message here',
@@ -23,7 +23,7 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
+		),*/
 		'firstname' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
@@ -82,7 +82,7 @@ class User extends AppModel {
                 'message' => 'That branch already has a branch manager'
             ),
 		),
-		'contact' => array(
+		/*'contact' => array(
 			'25_24' => array(
 				'message' => 'Please fill a contact number',
 				'allowEmpty' => false,
@@ -90,7 +90,7 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			)
-		),
+		),*/
         'roles' => array(
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
@@ -140,8 +140,8 @@ class User extends AppModel {
 
     public function hasDuplicates($check) {
         // $check will have value: array('Branch Taken' => 'some-value')
-        // $limit will have value: 25
 
+        debug($this->data);
         if($this->data['User']['roles'] == 'branch_manager') {
             $existingPromoCount = $this->find('count', array(
                 'conditions' => $check,

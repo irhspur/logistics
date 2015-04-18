@@ -34,7 +34,7 @@ class PurchasesController extends AppController{
 		$this->Purchase->recursive = 0;
 		$this->set('purchases', $this->Paginator->paginate());
 
-		$options = array('conditions' => array('Purchase.requestee' => $username));
+		$options = array('conditions' => array('Purchase.requestee' => $username, 'Purchase.purchase_status !=' => 'dispatched'));
 		$this->set('purchases', $this->Purchase->find('all', $options));
 	}
 

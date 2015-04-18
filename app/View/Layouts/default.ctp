@@ -22,7 +22,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo 'Logistics Process Manager' ?>:
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<?php
@@ -38,7 +38,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1><?php echo $this->Html->link('Logistics Process Manager', array('controller' => 'users', 'action' => 'index')); ?></h1>
 		</div>
 		<div id="content">
 
@@ -58,14 +58,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
+			<?php echo 'Copyright © 2015 Logistics Process Manager'
+			/*$this->Html->link(
 					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
 					'http://www.cakephp.org/',
 					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
+				);*/
 			?>
 			<p>
-				<?php echo $cakeVersion; ?>
+<!--				--><?php //echo $cakeVersion; ?>
 			</p>
 		</div>
 	</div>

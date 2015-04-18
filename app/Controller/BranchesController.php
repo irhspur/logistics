@@ -22,7 +22,7 @@ class BranchesController extends AppController {
      * @return void
      */
     public function index() {
-        $this->Branch->recursive = 0;
+        $this->Branch->recursive = -1;
         $this->set('branches', $this->Paginator->paginate());
     }
 
@@ -88,6 +88,9 @@ class BranchesController extends AppController {
             $options = array('conditions' => array('Branch.' . $this->Branch->primaryKey => $id));
             $this->request->data = $this->Branch->find('first', $options);
         }
+        $users = $this->Branch->User->find('list');
+        $this->set(compact('users'));
+
     }
 
     /**

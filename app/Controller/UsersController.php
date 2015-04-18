@@ -14,7 +14,7 @@ class UsersController extends AppController {
 		if($this->action == 'add' || $this->action == 'edit'){
 			$this->Auth->authenticate = $this->User;
 		}
-		
+
 		$this->Auth->allow('index', 'login');
 	}
 
@@ -97,17 +97,19 @@ class UsersController extends AppController {
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid User'));
 		}
-		if ($this->request->is(array('post', 'put'))) {
-			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The User has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The User could not be saved. Please, try again.'));
-			}
-		} else {
-			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-			$this->request->data = $this->User->find('first', $options);
-		}
+        if(empty($this->data)){ //if empty prepopulate the data
+            $this->data = $this->User->read(NULL, $id); //NULL represents to return all the fields
+        }else{ //someone is updating the post and we need to save the data
+            if($this->User->save($this->data)){
+                $this->Session->setFlash('The post was saved');
+                $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash('The post was not saved. Please try again');
+            }
+        }
+
+        $branches = $this->User->Branch->find('list');
+        $this->set(compact('branches'));
 	}
 
 /**
@@ -140,8 +142,11 @@ class UsersController extends AppController {
      */
     public function requests() {
 
-        $options = array('conditions' => array('User.roles' => array('employee', 'branch_manager')));
+        $options = array('conditions' => array('User.roles' =>'branch_manager'));
         $this->set('users', $this->User->find('all', $options));
+
+        $branches = $this->User->Branch->find('list');
+        $this->set(compact('branches'));
 //        $this->set('users', $this->Paginator->paginate());
     }
 

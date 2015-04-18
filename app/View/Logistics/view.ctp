@@ -23,12 +23,7 @@
 		</dd>
 		<dt><?php echo __('Vendor Id'); ?></dt>
 		<dd>
-			<?php echo h($logistic['Logistic']['vendor_id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Purchase'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($logistic['Purchase']['id'], array('controller' => 'purchases', 'action' => 'view', $logistic['Purchase']['id'])); ?>
+			<?php echo h($logistic['Vendor']['company']); ?>
 			&nbsp;
 		</dd>
 	</dl>

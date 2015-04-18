@@ -82,8 +82,8 @@ class LogisticsController extends AppController {
             $options = array('conditions' => array('Logistic.' . $this->Logistic->primaryKey => $id));
             $this->request->data = $this->Logistic->find('first', $options);
         }
-        $purchases = $this->Logistic->Purchase->find('list');
-        $this->set(compact('purchases'));
+        $vendors = $this->Logistic->Vendor->find('list');
+        $this->set(compact('vendors'));
     }
 
     /**

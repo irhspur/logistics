@@ -30,10 +30,6 @@ class Logistic extends AppModel {
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
                 'message' => 'Name cannot be empty.'
-            ),
-            'alphanumeric' => array(
-                'rule' => 'alphanumeric',
-                'message' => 'Name must be alphanumeric'
             )
         ),
         'price' => array(

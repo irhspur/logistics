@@ -4345,3 +4345,392 @@ Stack Trace:
 #3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
 #4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-04-18 09:12:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `lo...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `lo...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Post), Array, Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(22): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 09:12:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `lo...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `lo...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Post), Array, Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(22): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 09:13:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `lo...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `lo...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Post), Array, Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(22): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 09:13:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /logistics/posts/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `lo...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `lo...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Post), Array, Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(22): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 09:18:42 Error: Fatal Error (4): syntax error, unexpected $end in [E:\xampp\htdocs\logistics\app\View\Posts\index.ctp, line 106]
+2015-04-18 09:18:42 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /logistics/posts
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 106)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 106, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 106, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 09:21:34 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 9]
+2015-04-18 09:21:34 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /logistics/posts
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 9, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 9, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 10:20:23 Error: Fatal Error (64): Cannot redeclare class Post in [E:\xampp\htdocs\logistics\app\Model\Comment.php, line 14]
+2015-04-18 10:20:23 Error: [FatalErrorException] Cannot redeclare class Post
+Request URL: /logistics/comments/add/5/ramesh
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 14, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 14, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 10:39:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Comments.post_id' in 'where clause'
+Request URL: /logistics/comments/add/5/ramesh
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Comment...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Comment...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Comment), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\CommentsController.php(23): Model->find('all', Array)
+#7 [internal function]: CommentsController->add('5', 'ramesh')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 11:33:08 Error: [MissingActionException] Action PostsController::12() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '12',
+)
+Request URL: /logistics/posts/12
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-18 11:57:50 Error: Fatal Error (64): Cannot redeclare PostsController::index() in [E:\xampp\htdocs\logistics\app\Controller\PostsController.php, line 18]
+2015-04-18 11:57:50 Error: [FatalErrorException] Cannot redeclare PostsController::index()
+Request URL: /logistics/posts
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 18, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\xampp\htdocs...', 18, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 13:26:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.User.branch_id' in 'where clause'
+Request URL: /logistics/posts/index_overall
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Post), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(18): Model->find('all', Array)
+#7 [internal function]: PostsController->index_overall()
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 13:35:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.User.branch_id' in 'where clause'
+Request URL: /logistics/posts/index_overall
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Post), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(18): Model->find('all', Array)
+#7 [internal function]: PostsController->index_overall()
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 13:35:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.User.branch_id' in 'where clause'
+Request URL: /logistics/posts/index_overall/3
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Post), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(18): Model->find('all', Array)
+#7 [internal function]: PostsController->index_overall('3')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 13:35:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.User.branch_id' in 'where clause'
+Request URL: /logistics/posts/index_overall/1
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Post), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PostsController.php(18): Model->find('all', Array)
+#7 [internal function]: PostsController->index_overall('1')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 17:07:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`logistics_db`.`branches`, CONSTRAINT `branches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`branch_id`))
+Request URL: /logistics/users/delete/18
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2634): Mysql->delete(Object(User), Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(128): Model->delete()
+#5 [internal function]: UsersController->delete('18')
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 17:08:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`logistics_db`.`branches`, CONSTRAINT `branches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`branch_id`))
+Request URL: /logistics/users/delete/17
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2634): Mysql->delete(Object(User), Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(128): Model->delete()
+#5 [internal function]: UsersController->delete('17')
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 18:38:14 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Purchases\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Purchases\\edit.ctp',
+)
+Request URL: /logistics/purchases/edit/12
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-18 18:42:29 Error: [MissingViewException] View file "E:\xampp\htdocs\logistics\app\View\Purchases\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\xampp\\htdocs\\logistics\\app\\View\\Purchases\\edit.ctp',
+)
+Request URL: /logistics/purchases/edit/12
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#4 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-18 19:01:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'invaliate' at line 1
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('invaliate', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('invaliate', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('invaliate', Array, Array)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(808): DboSource->query('invaliate', Array, Object(User))
+#5 E:\xampp\htdocs\logistics\app\Model\User.php(123): Model->__call('invaliate', Array)
+#6 E:\xampp\htdocs\logistics\app\Model\User.php(123): User->invaliate('password_confir...', 'The passwords d...')
+#7 [internal function]: User->matchPasswords(Array, Array)
+#8 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationSet.php(135): CakeValidationRule->process('password', Array, Array)
+#10 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(267): CakeValidationSet->validate(Array, false)
+#11 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(3367): ModelValidator->validates(Array)
+#13 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1758): Model->validates(Array)
+#14 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(78): Model->save(Array)
+#15 [internal function]: UsersController->add()
+#16 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2015-04-18 19:04:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'invaliate' at line 1
+Request URL: /logistics/users/add
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('invaliate', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('invaliate', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('invaliate', Array, Array)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(808): DboSource->query('invaliate', Array, Object(User))
+#5 E:\xampp\htdocs\logistics\app\Model\User.php(123): Model->__call('invaliate', Array)
+#6 E:\xampp\htdocs\logistics\app\Model\User.php(123): User->invaliate('password_confir...', 'The passwords d...')
+#7 [internal function]: User->matchPasswords(Array, Array)
+#8 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Model\Validator\CakeValidationSet.php(135): CakeValidationRule->process('password', Array, Array)
+#10 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(267): CakeValidationSet->validate(Array, false)
+#11 E:\xampp\htdocs\logistics\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(3367): ModelValidator->validates(Array)
+#13 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1758): Model->validates(Array)
+#14 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(78): Model->save(Array)
+#15 [internal function]: UsersController->add()
+#16 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2015-04-18 19:09:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`logistics_db`.`branches`, CONSTRAINT `branches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`branch_id`))
+Request URL: /logistics/users/delete/18
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2634): Mysql->delete(Object(User), Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(128): Model->delete()
+#5 [internal function]: UsersController->delete('18')
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 19:09:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`logistics_db`.`branches`, CONSTRAINT `branches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`branch_id`))
+Request URL: /logistics/users/delete/16
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\Database\Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2634): Mysql->delete(Object(User), Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(128): Model->delete()
+#5 [internal function]: UsersController->delete('16')
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 19:12:35 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\UsersController.php, line 101]
+2015-04-18 19:12:35 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /logistics/users/edit/12
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 101, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 101, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 19:14:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`logistics_db`.`branches`, CONSTRAINT `branches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`branch_id`))
+Request URL: /logistics/users/edit/12
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `logisti...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\Database\Mysql.php(414): DboSource->execute('UPDATE `logisti...')
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(1838): Mysql->update(Object(User), Array, Array)
+#4 E:\xampp\htdocs\logistics\app\Controller\UsersController.php(103): Model->save(Array)
+#5 [internal function]: UsersController->edit('12')
+#6 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-18 19:20:28 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\LogisticsController.php, line 85]
+2015-04-18 19:20:28 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/logistics/edit/5
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 19:20:43 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\LogisticsController.php, line 85]
+2015-04-18 19:20:43 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/logistics/edit/5
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 19:22:34 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\LogisticsController.php, line 85]
+2015-04-18 19:22:34 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/logistics/edit/5
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 19:22:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\xampp\htdocs\logistics\app\Controller\LogisticsController.php, line 85]
+2015-04-18 19:22:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /logistics/logistics/edit/6
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\xampp\htdocs...', 85, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-18 19:29:46 Error: Fatal Error (4): syntax error, unexpected $end in [E:\xampp\htdocs\logistics\app\View\Purchases\select_report.ctp, line 56]
+2015-04-18 19:29:46 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /logistics/purchases/select_report
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\xampp\htdocs...', 56, Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\xampp\htdocs...', 56, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
