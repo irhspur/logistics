@@ -1,34 +1,49 @@
-<div class="users index">
-    <h2><?php echo __('Item Requests'); ?></h2>
-    <?php if($admin):?>
-        <table cellpadding="0" cellspacing="0">
-            <thead>
-            <tr>
-                <th><?php echo __('id'); ?></th>
-                <th><?php echo __('username'); ?></th>
-                <th><?php echo __('roles'); ?></th>
-                <th><?php echo __('branch_id'); ?></th>
-                <th class="actions"><?php echo __('Actions'); ?></th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php foreach ($users as $User): ?>
-                <tr>
-                    <td><?php echo h($User['User']['id']); ?>&nbsp;</td>
-                    <td><?php echo h($User['User']['username']); ?>&nbsp;</td>
-                    <td><?php echo h($User['User']['roles']); ?>&nbsp;</td>
-                    <td><?php echo h($User['Branch']['name']); ?>&nbsp;</td>
-                    <td class="actions">
-                        <?php echo $this->Html->link(__('View'), array('controller' =>'purchases', 'action' => 'view', $User['User']['branch_id'])); ?>
-                    </td>
-                </tr>
-            <?php endforeach; ?>
-            </tbody>
-        </table>
+<div class="Users index">
 
-    <?php else:?>
-        <p>Welcome <?php echo $current_user['username']; ?></p>
-    <?php endif;?>
+    <h2><?php echo __('Delivered Purchases'); ?></h2>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <th><?php echo $this->Paginator->sort('id'); ?></th>
+            <th><?php echo $this->Paginator->sort('logistic_id'); ?></th>
+            <th><?php echo $this->Paginator->sort('requestee'); ?></th>
+            <th><?php echo $this->Paginator->sort('vendor_id'); ?></th>
+            <th><?php echo $this->Paginator->sort('branch_id'); ?></th>
+            <th><?php echo $this->Paginator->sort('quantity'); ?></th>
+            <th><?php echo $this->Paginator->sort('amount'); ?></th>
+            <th><?php echo $this->Paginator->sort('purchase_status'); ?></th>
+            <th><?php echo $this->Paginator->sort('created'); ?></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($purchases as $purchase): ?>
+            <tr>
+                <td><?php echo $purchase['Purchase']['id']; ?></td>
+                <td><?php echo $purchase['Logistic']['name']; ?></td>
+                <td><?php echo $purchase['User']['username']; ?></td>
+                <td><?php echo $purchase['Vendor']['company']; ?></td>
+                <td><?php echo $purchase['Branch']['name']; ?></td>
+                <td><?php echo $purchase['Purchase']['quantity']; ?></td>
+                <td><?php echo $purchase['Purchase']['amount']; ?></td>
+                <td><?php echo $purchase['Purchase']['purchase_status']; ?></td>
+                <td><?php echo $purchase['Purchase']['created']; ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+    <p>
+        <?php
+        echo $this->Paginator->counter(array(
+            'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+        ));
+        ?>	</p>
+    <div class="paging">
+        <?php
+        echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+        echo $this->Paginator->numbers(array('separator' => ''));
+        echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+        ?>
+    </div>
 </div>
 <div class="actions">
     <h3><?php echo __('Actions'); ?></h3>

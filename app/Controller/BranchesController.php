@@ -39,6 +39,11 @@ class BranchesController extends AppController {
         }
         $options = array('conditions' => array('Branch.' . $this->Branch->primaryKey => $id));
         $this->set('branch', $this->Branch->find('first', $options));
+
+        $userSelect = array('conditions' => array('User.roles' => 'branch_manager', 'User.branch_id' => $id));
+        $user = $this->Branch->User->find('first', $userSelect);
+        $this->set(compact('user'));
+
     }
 
     /**

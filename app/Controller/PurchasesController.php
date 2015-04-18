@@ -34,7 +34,7 @@ class PurchasesController extends AppController{
 		$this->Purchase->recursive = 0;
 		$this->set('purchases', $this->Paginator->paginate());
 
-		$options = array('conditions' => array('Purchase.requestee' => $username, 'Purchase.purchase_status !=' => 'dispatched'));
+		$options = array('conditions' => array('Purchase.branch_id' => $username/*, 'Purchase.purchase_status !=' => 'dispatched'*/));
 		$this->set('purchases', $this->Purchase->find('all', $options));
 	}
 
@@ -212,7 +212,18 @@ class PurchasesController extends AppController{
 
         $options = array('conditions' => array(
             'Purchase.purchase_status' => 'dispatched',
-            'Purchase.user_id' => $userId
+            'Purchase.branch_id' => $userId
+        ));
+        $this->set('purchases', $this->Purchase->find('all', $options));
+    }
+
+    public function view_delivered($userId = NULL){
+        $this->Purchase->recursive = 0;
+        $this->set('purchases', $this->Paginator->paginate());
+
+        $options = array('conditions' => array(
+            'Purchase.purchase_status' => 'delivered',
+            'Purchase.branch_id' => $userId
         ));
         $this->set('purchases', $this->Purchase->find('all', $options));
     }

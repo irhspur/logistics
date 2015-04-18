@@ -141,10 +141,9 @@ class User extends AppModel {
     public function hasDuplicates($check) {
         // $check will have value: array('Branch Taken' => 'some-value')
 
-        debug($this->data);
         if($this->data['User']['roles'] == 'branch_manager') {
             $existingPromoCount = $this->find('count', array(
-                'conditions' => $check,
+                'conditions' => array($check, array('User.roles' => 'branch_manager')),
                 'recursive' => -1
             ));
             return $existingPromoCount == 0;

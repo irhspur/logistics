@@ -47,12 +47,18 @@
                     <?php if($purchase['Purchase']['purchase_status'] == 'pending' || $purchase['Purchase']['purchase_status'] == 'rejected'):?>
                         <?php /*echo $this->Form->postLink(__('Approve Request'), array('action' => 'approve', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to approve purchase # %s?', $purchase['Purchase']['id'])); */?>
                         <?php echo $this->Form->postLink(__('Approve Request'), array('action' => 'poaf_form', $purchase['Purchase']['id'], $purchase['Purchase']['requestee'])); ?>
-                    <?php else:?>
+                    <?php elseif(!($purchase['Purchase']['purchase_status'] == 'dispatched')): ?>
                         <?php echo $this->Form->postLink(__('Disapprove Request'), array('action' => 'disapprove', $purchase['Purchase']['id'], $purchase['Purchase']['requestee']), array(), __('Are you sure you want to disapprove purchase # %s?', $purchase['Purchase']['id'])); ?>
+                    <?php else:?>
+                        <?php echo ''; ?>
                     <?php endif;?>
-                    <?php echo $this->Form->postLink(__('Reject Purchase'), array('action' => 'cancel_request', $purchase['Purchase']['id']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+                    <?php if(!($purchase['Purchase']['purchase_status'] == 'dispatched')): ?>
+                            <?php echo $this->Form->postLink(__('Reject Purchase'), array('action' => 'cancel_request', $purchase['Purchase']['id']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+                    <?php endif;?>
                 <?php else:?>
-                    <?php echo $this->Form->postLink(__('Cancel Purchase'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+                    <?php if(!($purchase['Purchase']['purchase_status'] == 'dispatched')): ?>
+                        <?php echo $this->Form->postLink(__('Cancel Purchase'), array('action' => 'delete', $purchase['Purchase']['id'], $current_user['username']), array(), __('Are you sure you want to cancel purchase # %s?', $purchase['Purchase']['id'])); ?>
+                    <?php endif;?>
                 <?php endif;?>
             </td>
         <?php endif; ?>
@@ -97,9 +103,11 @@
         <ul>
             <li><?php echo $this->Html->link(__('My Profile'), array('controller' => 'users', 'action' => 'view', $current_user['id'])); ?></li>
             <li><?php echo $this->Html->link(__('Edit Profile'), array('controller' => 'users', 'action' => 'edit', $current_user['id'])); ?></li>
+            <li><?php echo $this->Html->link(__('Show Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
             <li><?php echo $this->Html->link(__('Request Item'), array('controller' => 'purchases', 'action' => 'add', $current_user['username'])); ?></li>
-            <li><?php echo $this->Html->link(__('My Purchases'), array('controller' => 'purchases', 'action' => 'view', $current_user['username'])); ?> </li>
-            <li><?php echo $this->Html->link(__('Dispatched Purchases'), array('controller' => 'purchases', 'action' => 'view_dispatched', $current_user['id'])); ?></li>
+            <li><?php echo $this->Html->link(__('My Purchases'), array('controller' => 'purchases', 'action' => 'view', $current_user['branch_id'])); ?> </li>
+            <li><?php echo $this->Html->link(__('Dispatched Purchases'), array('controller' => 'purchases', 'action' => 'view_dispatched', $current_user['branch_id'])); ?></li>
+            <li><?php echo $this->Html->link(__('Delivered Purchases'), array('controller' => 'purchases', 'action' => 'view_delivered', $current_user['branch_id'])); ?></li>
             <li><?php echo $this->Html->link(__('Create a post'), array('controller' => 'posts', 'action' => 'add', $current_user['id'], $current_user['roles'], $current_user['branch_id'])); ?></li>
             <li><?php echo $this->Html->link(__('View posts'), array('controller' => 'posts', 'action' => 'index_overall', $current_user['branch_id'])); ?></li>
         </ul>
@@ -108,10 +116,13 @@
         <ul>
             <li><?php echo $this->Html->link(__('My Profile'), array('controller' => 'users', 'action' => 'view', $current_user['id'])); ?></li>
             <li><?php echo $this->Html->link(__('Edit Profile'), array('controller' => 'users', 'action' => 'edit', $current_user['id'])); ?></li>
-            <li><?php echo $this->Html->link(__("Branch's Purchases"), array('controller' => 'purchases', 'action' => 'view', $current_user['username'])); ?> </li>
-            <li><?php echo $this->Html->link(__('Dispatched Purchases'), array('controller' => 'purchases', 'action' => 'view_dispatched', $current_user['id'])); ?></li>
+            <li><?php echo $this->Html->link(__('Show Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
+            <li><?php echo $this->Html->link(__("Branch's Purchases"), array('controller' => 'purchases', 'action' => 'view', $current_user['branch_id'])); ?> </li>
+            <li><?php echo $this->Html->link(__('Dispatched Purchases'), array('controller' => 'purchases', 'action' => 'view_dispatched', $current_user['branch_id'])); ?></li>
+            <li><?php echo $this->Html->link(__('Delivered Purchases'), array('controller' => 'purchases', 'action' => 'view_delivered', $current_user['branch_id'])); ?></li>
             <li><?php echo $this->Html->link(__('Create a post'), array('controller' => 'posts', 'action' => 'add', $current_user['id'], $current_user['roles'], $current_user['branch_id'])); ?></li>
             <li><?php echo $this->Html->link(__('View posts'), array('controller' => 'posts', 'action' => 'index', $current_user['id'])); ?></li>
         </ul>
     <?php endif;?>
 </div>
+

@@ -1,34 +1,15 @@
-<div class="users index">
-    <h2><?php echo __('Item Requests'); ?></h2>
-    <?php if($admin):?>
-        <table cellpadding="0" cellspacing="0">
-            <thead>
-            <tr>
-                <th><?php echo __('id'); ?></th>
-                <th><?php echo __('username'); ?></th>
-                <th><?php echo __('roles'); ?></th>
-                <th><?php echo __('branch_id'); ?></th>
-                <th class="actions"><?php echo __('Actions'); ?></th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php foreach ($users as $User): ?>
-                <tr>
-                    <td><?php echo h($User['User']['id']); ?>&nbsp;</td>
-                    <td><?php echo h($User['User']['username']); ?>&nbsp;</td>
-                    <td><?php echo h($User['User']['roles']); ?>&nbsp;</td>
-                    <td><?php echo h($User['Branch']['name']); ?>&nbsp;</td>
-                    <td class="actions">
-                        <?php echo $this->Html->link(__('View'), array('controller' =>'purchases', 'action' => 'view', $User['User']['branch_id'])); ?>
-                    </td>
-                </tr>
-            <?php endforeach; ?>
-            </tbody>
-        </table>
-
-    <?php else:?>
-        <p>Welcome <?php echo $current_user['username']; ?></p>
-    <?php endif;?>
+<div class="logistics form">
+<?php echo $this->Form->create('Vendor'); ?>
+	<fieldset>
+		<legend><?php echo __('Edit Vendor'); ?></legend>
+	<?php
+		echo $this->Form->input('id');
+		echo $this->Form->input('company');
+		echo $this->Form->input('name_of_person');
+		echo $this->Form->input('contact');
+	?>
+	</fieldset>
+<?php echo $this->Form->end(__('Submit')); ?>
 </div>
 <div class="actions">
     <h3><?php echo __('Actions'); ?></h3>

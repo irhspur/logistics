@@ -55,29 +55,3 @@
     </dl>
     <?php echo $this->Form->postLink(__('Confirm Deliverance'), array('action' => 'delivered', $purchase['Purchase']['id'], $purchase['Purchase']['user_id']), array(), __('Are you sure you want to confirm the deliverance of the purchase # %s?', $purchase['Purchase']['id'])); ?>
 </div>
-<div class="actions">
-    <h3><?php echo __('Actions'); ?></h3>
-    <?php if($admin):?>
-        <ul>
-            <li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></li>
-            <li><?php echo $this->Html->link(__('New Branch'), array('controller' => 'branches', 'action' => 'add')); ?></li>
-            <li><?php echo $this->Html->link(__('New Item'), array('controller' => 'logistics', 'action' => 'add')); ?></li>
-            <li><?php echo $this->Html->link(__('New Vendor'), array('controller' => 'vendors', 'action' =>'add')); ?></li>
-            <li>------------------------------</li>
-            <li><?php echo $this->Html->link(__('Show Branches'), array('controller' => 'branches', 'action' => 'index')); ?></li>
-            <li><?php echo $this->Html->link(__('Show Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
-            <li><?php echo $this->Html->link(__('Show Vendors'), array('controller' => 'vendors', 'action' => 'index')); ?></li>
-            <li>------------------------------</li>
-            <li><?php echo $this->Html->link(__('Item Requests'), array('controller' => 'users', 'action' => 'requests')); ?></li>
-            <li><?php echo $this->Html->link(__('Dispatch Purchases'), array('controller' => 'purchases', 'action' => 'view_approved')); ?></li>
-            <li>------------------------------</li>
-            <li><?php echo $this->Html->link(__('Purchase Report'), array('controller' => 'purchases', 'action' => 'select_report')); ?></li>
-        </ul>
-    <?php else:?>
-        <ul>
-            <li><?php echo $this->Html->link(__('My Profile'), array('controller' =>'users', 'action' => 'view', $current_user['id'])); ?></li>
-            <li><?php echo $this->Html->link(__('Request Item'), array('controller' =>'purchases', 'action' => 'add', $current_user['username'])); ?> </li>
-            <li><?php echo $this->Html->link(__('List Items'), array('controller' => 'logistics', 'action' => 'index')); ?></li>
-        </ul>
-    <?php endif;?>
-</div>
