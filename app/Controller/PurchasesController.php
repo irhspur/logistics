@@ -184,7 +184,11 @@ class PurchasesController extends AppController{
         $this->Purchase->read(NULL, $id);
         $this->Purchase->set('purchase_status',  'approved');
         $this->Purchase->save();
-        $this->Session->setFlash('The purchase has been approved');
+
+
+        $vendor = $this->Purchase->find('first', array('fields' => 'vendor_id'));
+
+        $this->Session->setFlash('The purchase has been approved. An email has been sent to the respective vendor regarding the order.');
         $this->redirect(array('action' => 'view', $username));
     }
 

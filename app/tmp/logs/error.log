@@ -4778,3 +4778,83 @@ Stack Trace:
 #3 E:\xampp\htdocs\logistics\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-04-18 22:26:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Dispatch.purchase_id' in 'where clause'
+Request URL: /logistics/purchases/egr_form/39/31
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Purchase), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php(165): Model->find('first', Array)
+#7 [internal function]: PurchasesController->egr_form('39', '31')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchasesController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 22:28:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Purchase.purchase_id' in 'on clause'
+Request URL: /logistics/purchases/egr_form/39/31
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Purchase), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php(159): Model->find('first', Array)
+#7 [internal function]: PurchasesController->egr_form('39', '31')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchasesController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 22:28:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Purchase.purchase_id' in 'on clause'
+Request URL: /logistics/purchases/egr_form/39/31
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Purchase), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php(159): Model->find('first', Array)
+#7 [internal function]: PurchasesController->egr_form('39', '31')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchasesController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 22:29:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Dispatch.purchase_id' in 'where clause'
+Request URL: /logistics/purchases/egr_form/39/31
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Purchase), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php(165): Model->find('first', Array)
+#7 [internal function]: PurchasesController->egr_form('39', '31')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchasesController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-18 22:30:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Purchase.Dispatch.purchase_id' in 'where clause'
+Request URL: /logistics/purchases/egr_form/39/31
+Stack Trace:
+#0 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 E:\xampp\htdocs\logistics\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Purchase), Array)
+#5 E:\xampp\htdocs\logistics\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 E:\xampp\htdocs\logistics\app\Controller\PurchasesController.php(165): Model->find('first', Array)
+#7 [internal function]: PurchasesController->egr_form('39', '31')
+#8 E:\xampp\htdocs\logistics\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchasesController), Array)
+#9 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 E:\xampp\htdocs\logistics\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchasesController), Object(CakeRequest))
+#11 E:\xampp\htdocs\logistics\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
